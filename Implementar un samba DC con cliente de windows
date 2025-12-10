@@ -150,3 +150,6 @@ sudo setenforce 0
 
 # Para verificar el estado (debería decir "Permissive")
 sestatus
+
+# Desactivar el Firewall de windows por si acaso
+Set-NetFirewallProfile -Profile Domain,Private,Public -Enabled False
